@@ -2,6 +2,31 @@
   background-image: url('images/Home/Hero04.png');
 }
 
+.call-now-button {
+  background-color: #ecab23;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.call-now-button:hover {
+  background-color: #d39e1d;
+  transform: scale(1.05);
+}
+
+.call-now-button .feather {
+  font-size: 2rem; /* Increase the icon size */
+  margin-right: 10px;
+}
+
 /* Image for mobile view */
 @media (max-width: 768px) {
   .home-page-hero {
@@ -20,7 +45,17 @@
       display: none;
     }
     .contact-form-home {
-      margin-top: 2rem;
+      margin-top: -7rem;
+    }
+
+    .home-page-hero .row {
+      text-align: center;
+    }
+  }
+
+   @media (max-width: 993px) {
+    .hide-on-mobile {
+      display: none;
     }
   }
 
