@@ -1,0 +1,167 @@
+.booknow {
+  max-width: 60%;
+  width: 100%; /* Default to 100% width */
+  background-color: #F7F0F0;
+  border-radius: 14px;
+
+  /* Media query for tablets and smaller screens */
+  @media (max-width: 991.98px) {
+    max-width: none; /* Remove max-width restriction */
+    width: 100%; /* Take up full width */
+  }
+}
+
+
+
+.progress-section {
+  display: flex;
+  align-items: center;
+}
+
+.progress-section .dot {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.progress-section .line {
+  width: 100px;
+  height: 2px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.progress-section .dot.ticked {
+  background-color: green;
+}
+
+.progress-section .dot.ticked::before {
+  content: '✔';
+  color: white;
+  font-size: 12px;
+}
+
+.progress-section .line.active {
+  background-color: green;
+}
+
+.selected-info {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.date-carousel .arrow {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0 10px;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.date-carousel .arrow:hover {
+  color: #ECAB23;
+}
+
+.date-section-wrapper {
+  overflow: hidden;
+  width: 280px; /* Adjust as needed */
+}
+
+.date-section {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.date {
+  flex: 0 0 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.date:hover {
+  background-color: #ECAB23;
+  color: white;
+  transform: scale(1.2);
+}
+
+.date.selected {
+  background-color: #ECAB23;
+  color: white;
+}
+
+.slot-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensure buttons wrap to new row if necessary */
+  justify-content: center; /* Center align buttons horizontally */
+  gap: 10px; /* Add space between buttons */
+}
+
+.slot-button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #B22F27; /* Red background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.slot-button:hover {
+  background-color: #8c221f;
+  transform: scale(1.05);
+}
+
+.form-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.summary-section {
+  display: none;
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.summary-section h2 {
+  margin-bottom: 20px;
+}
+
+.summary-section p {
+  margin: 10px 0;
+}
+
+.thank-you {
+  color: green;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.thank-you .tick {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
