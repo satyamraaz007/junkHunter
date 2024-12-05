@@ -6778,7 +6778,7 @@ header .navbar {
   z-index: 99;
 }
 header .navbar [class*=col-] {
-  padding: 0 15px;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

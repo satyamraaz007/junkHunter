@@ -1,3 +1,91 @@
+.navbar,
+.navbar-collapse {
+    background-color: #b22f27 !important;
+}
+.navbar,
+.navbar-collapse,
+.navbar .nav-link,
+.navbar .nav-item .dropdown-menu,
+.navbar .nav-item .dropdown-menu a,
+.navbar .service-navbar,
+.navbar .service-area-navbar,
+.navbar .btn {
+    color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .service-navbar:hover,
+.navbar .service-area-navbar:hover,
+.navbar .btn:hover {
+    color: white !important;
+    opacity: 0.8; /* Optional: adds a slight hover effect */
+}
+
+.navbar .dropdown-menu {
+    background-color: #b22f27 !important; /* Match the dropdown background with the navbar */
+}
+
+.navbar .dropdown-menu a {
+    color: white !important;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #d1403f; /* Slightly lighter shade for hover */
+    color: white !important;
+}
+
+/* call now button start */
+.call-now-container {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.call-now-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; /* Text color */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.call-now-button a:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  transform: translateY(-3px); /* Lift button on hover */
+}
+
+.call-now-button i {
+  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 24px; /* Icon size */
+}
+
+@media screen and (max-width: 767px) {
+  .call-now-button a {
+    font-size: 16px; /* Slightly smaller text on small screens */
+  }
+
+  .call-now-button i {
+    font-size: 20px; /* Adjust icon size for small screens */
+  }
+}
+
+/* call now button end */
+
+
+
 .home-page-hero {
   background-image: url('images/Home/Hero04.png');
 }
@@ -30,7 +118,7 @@
 /* Image for mobile view */
 @media (max-width: 768px) {
   .home-page-hero {
-    background-image: url('images/Home/Hero_mobile_04.png');
+    background-image: linear-gradient(#ffc107, #ffc107); /* Solid yellow background */
   }
 }
 
@@ -45,7 +133,7 @@
       display: none;
     }
     .contact-form-home {
-      margin-top: -7rem;
+      margin-top: -10rem;
     }
 
     .home-page-hero .row {
@@ -139,3 +227,47 @@ textarea.form-control {
     margin-bottom: 0.5rem;
   }
 }
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.pricing-image {
+  width: 100%;            /* Make the images responsive */
+  max-width: 300px;        /* Set a reasonable max width */
+  height: auto;            /* Maintain aspect ratio */
+  margin-bottom: 15px;     /* Add spacing between images */
+}
+
+.pricing-image-div, .help-desk-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.junk-hunter-agent-section {
+  background-color: #ecab23;
+}
+@media (max-width: 768px) {
+  .pricing-image-div{
+    flex-direction: column; /* Stack images vertically on small screens */
+    align-items: center;    /* Center-align the images */
+  }
+
+  .pricing-image {
+    width: 100%;            /* Make images take full width on mobile */
+    max-width: 300px;        /* Optional: Set max width for images */
+  }
+
+  .junk-hunter-agent-section {
+    background: transparent;
+  }
+
+  .junk-hunter-agent-section-content {
+    padding: 2rem;
+    background-color: #ecab23 !important;
+
+  }
+}
+
