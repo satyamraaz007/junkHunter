@@ -1,0 +1,13 @@
+# robots.txt for junkhunter.net
+
+# Allow all search engines
+User-agent: *
+Disallow: /private/         # Restrict access to private directories
+Disallow: /admin/           # Restrict access to admin area
+Disallow: /cgi-bin/         # Restrict access to CGI scripts
+
+# Allow all other pages
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.junkhunter.net/sitemap.xml
